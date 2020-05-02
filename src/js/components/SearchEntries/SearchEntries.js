@@ -1,5 +1,5 @@
 import React from 'react';
-import { searchCity, openWeatherMap } from './searchEntriesActions'
+import { searchCity, openWeatherMap } from './SearchEntriesActions'
 
 export default class SearchEntries extends React.Component {
   constructor(props) {
