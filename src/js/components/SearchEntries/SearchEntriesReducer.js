@@ -23,7 +23,8 @@ export default function searchCity(state = defaultState, action) {
         searchHistory: [
           ...state.searchHistory,
           { name: payload.data.name, date: moment().format('MMMM Do YYYY'), time: moment().format('h:mm:ss a') }
-        ]
+        ],
+        cityName: ''
       }
     }
     default: {

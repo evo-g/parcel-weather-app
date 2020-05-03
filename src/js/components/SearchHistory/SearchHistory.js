@@ -14,9 +14,8 @@ export default class SearchHistory extends React.Component {
   render() {
     const { searchHistory } = this.props;
     if (searchHistory) {
-      console.log(searchHistory)
       return (
-        <div className='col-12 col-md-6 mb-8'>
+        <div className='col-12 col-md-6 mb-5'>
           <div className='card border-primary'>
             <div className='card-header text-primary alert-primary'> Search History </div>
             <CardBody className='card-body'>
@@ -34,25 +33,17 @@ export default class SearchHistory extends React.Component {
             </CardBody>
           </div>
         </div>
-      )
+      );
     } else {
-      return
+      return (
       <div className='col-12 col-md-6 mb-8'>
         <div className='card border-primary'>
           <div className='card-header text-primary alert-primary'> Search History </div>
           <div className='card-body'>
-            <table>
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </div>
-
+      );
     }
   }
 };

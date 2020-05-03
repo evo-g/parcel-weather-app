@@ -5,7 +5,6 @@ const CardBody = styled.div`
   .text-center span {
     color: #019387;
   }
-  
 `;
 
 export default class City extends React.Component {
@@ -15,9 +14,8 @@ export default class City extends React.Component {
   render() {
     const { weatherData } = this.props;
     if (weatherData) {
-      console.log(weatherData);
       return (
-        <div className='col-12 col-md-6 mb-4'>
+        <div className='col-12 col-md-6 mb-3'>
           <div className='card border-primary'>
             <div className='card-header text-primary alert alert-primary'> City Information</div>
             <CardBody className='card-body'>
@@ -35,7 +33,7 @@ export default class City extends React.Component {
                 <div className="col-lg-4 text-center">Pressure <br /><span>{weatherData.main.pressure}</span></div>
                 <div className="col-lg-4 text-center">Humidity <br /><span>{weatherData.main.humidity}</span></div>
               </div>
-              <div className='row mt-5'>
+              <div className='row mt-3'>
                 <div className="col-lg-4 text-center">Lowest Temp (F)<br /><span>{weatherData.main.temp_min}˚</span></div>
                 <div className="col-lg-4 text-center">Highest Temp (F)<br /><span>{weatherData.main.temp_max}</span></div>
                 <div className="col-lg-4 text-center">Wind Speed <br /><span>{weatherData.wind.speed}</span></div>
@@ -50,20 +48,6 @@ export default class City extends React.Component {
         <div className='card border-primary'>
           <div className='card-header text-primary alert alert-primary'> City Information</div>
           <div className='card-body'>
-            <h5 className='text-center'>
-              <br />
-            </h5>
-            <hr />
-            <div className='row mb-2'>
-              <div className="col-lg-4 text-center">Temprature (F) <br /></div>
-              <div className="col-lg-4 text-center">Pressure <br /></div>
-              <div className="col-md-4 text-center">Humidity <br /></div>
-            </div>
-            <div className='row mt-5'>
-              <div className="col-lg-4 text-center">Lowest Temp (F)<br /></div>
-              <div className="col-lg-4 text-center">Highest Temp (F)<br /></div>
-              <div className="col-lg-4 text-center">Wind Speed <br /></div>
-            </div>
           </div>
         </div>
       </div>
